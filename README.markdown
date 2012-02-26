@@ -4,9 +4,16 @@ Fixes missing selector error when running unit tests in Xcode 4.4 pre-releases. 
 
 ## Instructions
 
+### From source
+
 - Clone repository and build/archive
 - Distribute the archive and go to your DerivedData directory for the project
 - Copy .xcplugin folder to `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/`
+
+### Pre-built binary
+
+- Download the [pre-built plugin](https://github.com/downloads/joefiorini/Xcode-IDETestFixes/IDETestFixes.xcplugin.zip)
+- Extract the zip file and copy the .xcplugin folder to `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/`
 
 ### Credit
 
