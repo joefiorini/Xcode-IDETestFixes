@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'IDETestFixes' target in the 'IDETestFixes' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
