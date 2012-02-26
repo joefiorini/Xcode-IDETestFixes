@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D899DAFB14FAF677003D6DFB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D899DAFA14FAF677003D6DFB /* CoreFoundation.framework */; };
 		D8D389CE14FAF116003544C1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D389CD14FAF116003544C1 /* Cocoa.framework */; };
 		D8D389D814FAF116003544C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D389D614FAF116003544C1 /* InfoPlist.strings */; };
+		D8D389E014FAF135003544C1 /* IDETestFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D389DF14FAF135003544C1 /* IDETestFixes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D8D389CA14FAF116003544C1 /* IDETestFixes.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDETestFixes.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D899DAFA14FAF677003D6DFB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D8D389CA14FAF116003544C1 /* IDETestFixes.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDETestFixes.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D389CD14FAF116003544C1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D8D389D014FAF116003544C1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D8D389D114FAF116003544C1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D8D389D214FAF116003544C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D8D389D514FAF116003544C1 /* IDETestFixes-Info.plist */ = {isa = PBXFileReference; path = "IDETestFixes-Info.plist"; sourceTree = "<group>"; };
+		D8D389D514FAF116003544C1 /* IDETestFixes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDETestFixes-Info.plist"; sourceTree = "<group>"; };
 		D8D389D714FAF116003544C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D8D389D914FAF116003544C1 /* IDETestFixes-Prefix.pch */ = {isa = PBXFileReference; path = "IDETestFixes-Prefix.pch"; sourceTree = "<group>"; };
+		D8D389D914FAF116003544C1 /* IDETestFixes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDETestFixes-Prefix.pch"; sourceTree = "<group>"; };
+		D8D389DF14FAF135003544C1 /* IDETestFixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDETestFixes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D899DAFB14FAF677003D6DFB /* CoreFoundation.framework in Frameworks */,
 				D8D389CE14FAF116003544C1 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +51,7 @@
 		D8D389CB14FAF116003544C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8D389CA14FAF116003544C1 /* IDETestFixes.bundle */,
+				D8D389CA14FAF116003544C1 /* IDETestFixes.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +59,7 @@
 		D8D389CC14FAF116003544C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D899DAFA14FAF677003D6DFB /* CoreFoundation.framework */,
 				D8D389CD14FAF116003544C1 /* Cocoa.framework */,
 				D8D389CF14FAF116003544C1 /* Other Frameworks */,
 			);
@@ -74,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D8D389D414FAF116003544C1 /* Supporting Files */,
+				D8D389DF14FAF135003544C1 /* IDETestFixes.m */,
 			);
 			path = IDETestFixes;
 			sourceTree = "<group>";
@@ -105,7 +112,7 @@
 			);
 			name = IDETestFixes;
 			productName = IDETestFixes;
-			productReference = D8D389CA14FAF116003544C1 /* IDETestFixes.bundle */;
+			productReference = D8D389CA14FAF116003544C1 /* IDETestFixes.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -150,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D389E014FAF135003544C1 /* IDETestFixes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -215,24 +224,36 @@
 		D8D389DD14FAF116003544C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IDETestFixes/IDETestFixes-Prefix.pch";
 				INFOPLIST_FILE = "IDETestFixes/IDETestFixes-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
 		};
 		D8D389DE14FAF116003544C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IDETestFixes/IDETestFixes-Prefix.pch";
 				INFOPLIST_FILE = "IDETestFixes/IDETestFixes-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
 		};
@@ -255,6 +276,7 @@
 				D8D389DE14FAF116003544C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
